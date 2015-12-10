@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script data-require="jquery" data-semver="2.1.4" src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./min/script-min.js"></script>
+  </head>
+
+  <body>
+    <h1>NPM Dependency Tree JSON &rarr; HTML Converter</h1>
+    <p>Converts JSON output from <code>npm list --json=true</code> to a properly nested HTML list.</p>
+    <form id="inputForm" name="inputForm" action="">
+    <textarea id="input" rows="30" cols="100" placeholder='{"name": "YourModule", "version": "1.0.0", "dependencies": {...}}'></textarea><br />
+    <input type="submit" value="Submit" />
+    </form>
+
+    <div id="output"></div>
+  </body>
+
+</html>
+
